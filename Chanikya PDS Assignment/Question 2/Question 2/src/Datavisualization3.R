@@ -1,0 +1,5 @@
+library(readr)
+StudentsPerformance <- read_csv("StudentsPerformance.csv")
+View(StudentsPerformance)
+attach(StudentsPerformance)
+boxplot(`writing score`,main="Box Plot for writing score",col='red')
